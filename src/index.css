@@ -23,6 +23,7 @@ h4 {
 
 a {
   color: rgb(48 47 47);
+  text-decoration: none;
 }
 
 .recipe__meals {
@@ -74,4 +75,27 @@ a {
   display: flex;
   justify-content: center;
   margin: 2rem 0rem;
+}
+
+.recipe__search {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+}
+
+.recipe__search-item {
+  min-height: 25rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.recipe__search-item img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.recipe__search-item h4 {
+  text-align: center;
+  padding: 1rem;
 }
