@@ -5,27 +5,27 @@ import { NavLink } from 'react-router-dom';
 function Category() {
   return (
     <div className='recipe__categories'>
-        <NavLink to={'/cuisine/Italian'}>
+        <NavLink className='recipe__categories-link' to={'/cuisine/Italian'}>
             <FaPizzaSlice/>
-            <h4>
+            <h4 className='recipe__categories-title'>
                 Italian
             </h4>
         </NavLink>
-        <NavLink to={'/cuisine/American'}>
+        <NavLink className='recipe__categories-link' to={'/cuisine/American'}>
             <FaHamburger/>
-            <h4>
+            <h4 className='recipe__categories-title'>
                 American
             </h4>
         </NavLink>
-        <NavLink to={'/cuisine/Thai'}>
+        <NavLink className='recipe__categories-link' to={'/cuisine/Thai'}>
             <GiNoodles/>
-            <h4>
+            <h4 className='recipe__categories-title'>
                 Thai
             </h4>
         </NavLink>
-        <NavLink to={'/cuisine/Japanese'}>
+        <NavLink className='recipe__categories-link' to={'/cuisine/Japanese'}>
             <GiChopsticks/>
-            <h4>
+            <h4 className='recipe__categories-title'>
                 Japanese
             </h4>
         </NavLink>
