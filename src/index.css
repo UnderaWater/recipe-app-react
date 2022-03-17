@@ -127,3 +127,31 @@ a {
 .recipe__categories-link.active {
   background: linear-gradient(to right, #f27121, #e94057);
 }
+
+.recipe__form {
+  margin: 0rem 2rem;
+}
+
+.recipe__form div {
+  width: 100%;
+  position: relative;
+}
+
+.recipe__form-input {
+  border: none;
+  width: 100%;
+  background: linear-gradient(35deg, #494949, #313131);
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  outline: none;
+  color: #fcfffc;
+}
+
+.recipe__form svg {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(100%, -50%);
+  color: #fcfffc;
+}
