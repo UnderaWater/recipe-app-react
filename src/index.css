@@ -155,3 +155,41 @@ a {
   transform: translate(100%, -50%);
   color: #fcfffc;
 }
+
+.recipe__details {
+  display: flex;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.recipe__details-title {
+  margin-bottom: 2rem;
+}
+
+.recipe__details-list {
+  margin-top: 2rem;
+}
+
+.recipe__details-list-item {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+.recipe__details .active {
+  background: linear-gradient(35deg, #494949, #313131);
+  color: #fcfffc;
+}
+
+.recipe__details-btn {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  margin-right: 2rem;
+  font-weight: 600;
+  color: #313131;
+  background: #fcfffc;
+  border: 2px solid black;
+}
+
+.recipe__details-info {
+  margin-left: 10rem;
+}
