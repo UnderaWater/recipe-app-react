@@ -29,6 +29,24 @@ function Recipe() {
                 <button className={`recipe__details-btn ${active === 'ingredients' ? 'active' : ''}`} onClick={() => setActive('ingredients')}>
                     Ingredients
                 </button>
+                {active === 'instructions' && (
+                    <div>
+                        <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
+                        <h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
+                    </div>
+                )}
+                {active === 'ingredients' && (
+                    <ul className='recipe__details-list'>
+                        {details.extendedIngredients.map((element) => {
+                            return (
+                                <li className='recipe__details-list-item' key={element.id}>
+                                    {element.original}
+                                </li>
+                            )
+                        })}
+                    </ul>
+                )}
+
             </div>
         </div>
     )

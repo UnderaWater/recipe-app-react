@@ -18,18 +18,22 @@ function Cuisine() {
     }, [params.type])
 
     return (
-        <div className='recipe__search'>
+        <motion.div className='recipe__search'
+            animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}
+        >
             {cuisine.map((element) => {
                 return (
                     <div className='recipe__search-item' key={element.id}>
-                        <img src={element.image} alt={element.title} />
-                        <h4>
-                            {element.title}
-                        </h4>
+                        <Link to={`/recipe/${element.id}`}>
+                            <img src={element.image} alt={element.title} />
+                            <h4>
+                                {element.title}
+                            </h4>
+                        </Link>
                     </div>
                 )
             })}
-        </div>
+        </motion.div>
     )
 }
 

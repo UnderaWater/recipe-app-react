@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 function Searched() {
     const [searchResult, setSearchResult] = useState([]);
@@ -21,10 +21,12 @@ function Searched() {
             {searchResult.map((element) => {
                 return (
                     <div className='recipe__search-item' key={element.id}>
-                        <img src={element.image} alt={element.title} />
-                        <h4>
-                            {element.title}
-                        </h4>
+                        <Link to={`/recipe/${element.id}`}>
+                            <img src={element.image} alt={element.title} />
+                            <h4>
+                                {element.title}
+                            </h4>
+                        </Link>
                     </div>
                 )
             })}
