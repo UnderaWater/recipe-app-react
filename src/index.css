@@ -214,3 +214,9 @@ a {
 .recipe__details-info {
   margin-left: 10rem;
 }
+
+@media screen and (max-width: 1700px) {
+  body {
+    margin: 0 5%;
+  }
+}

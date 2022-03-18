@@ -19,7 +19,7 @@ function Recipe() {
     return (
         <div className='recipe__details'>
             <div>
-                <h2>{details.title}</h2>
+                <h2 className='recipe__details-title'>{details.title}</h2>
                 <img src={details.image} alt={details.title} />
             </div>
             <div className='recipe__details-info'>
